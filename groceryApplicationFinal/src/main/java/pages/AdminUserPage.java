@@ -44,7 +44,9 @@ public class AdminUserPage {
 	WebElement resetButton;
 	@FindBy(xpath = "//center[text()='.........RESULT NOT FOUND.......']")
 	WebElement noResultFoundText;
-
+	
+	//chaining of pages
+	
 	public AdminUserPage clickAddNewUserButton() {
 		wait.waitUntilElementToBeClickable(driver, addNewUserButton);
 		addNewUserButton.click();

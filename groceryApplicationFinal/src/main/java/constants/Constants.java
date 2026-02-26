@@ -16,6 +16,5 @@ public class Constants {
 	public static final String ERRORMSGFORLOGOUTFAILURE = "Logout not successful";
 	public static final String NOSEARCHRESULTFOUNDMSG = "No search results displayed";
 	public static final String ERRORMESSAGEFORRESETFAIL = "Reset failed: 'RESULT NOT FOUND' message is still displayed";
-	
 
 }

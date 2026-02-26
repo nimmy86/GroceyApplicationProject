@@ -19,9 +19,9 @@ public class Listeners extends Base implements ITestListener {
 
 	/* This method will be automatically executed before all @Test Methods */
 	public void onTestStart(ITestResult result) {
-		// This method will fetch the methodname and attach to the report
+		// This method will fetch the methodname and attach to the report 
 		ITestListener.super.onTestStart(result);
-		test = extent.createTest(result.getMethod().getMethodName());
+		test = extent.createTest(result.getMethod().getMethodName()); 
 		extentTest.set(test);
 
 	}
@@ -34,7 +34,7 @@ public class Listeners extends Base implements ITestListener {
 
 		ITestListener.super.onTestSuccess(result);
 		extentTest.get().log(Status.PASS, "Test Passed");
-
+		//automatically invoked when a test method is pass
 	}
 
 	public void onTestFailure(ITestResult result) {
